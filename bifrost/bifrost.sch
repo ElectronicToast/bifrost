@@ -845,7 +845,7 @@ Wire Wire Line
 	6300 2300 6500 2300
 NoConn ~ 6600 2800
 NoConn ~ 6600 3100
-Text Notes 5500 1700 0    100  ~ 20
+Text Notes 5500 1500 0    100  ~ 20
 ARDUINO NANO
 $Comp
 L Connector:AudioJack3 J8
@@ -2725,4 +2725,6 @@ F 3 "" H 8200 5600 50  0001 C CNN
 	1    8200 5600
 	1    0    0    -1  
 $EndComp
+Text Notes 5500 1700 0    50   ~ 0
+DO NOT POWER FROM USB AND\nLED 5V POWER SIMULTANEOUSLY
 $EndSCHEMATC
