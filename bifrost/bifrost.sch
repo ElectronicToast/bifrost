@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Bifrost RGB LED Controller"
-Date "2019-12-18"
+Date "2019-12-20"
 Rev "A"
 Comp "Ruddock House Electrical Engineering"
 Comment1 "California Institute of Technology"
@@ -1409,8 +1409,8 @@ Text Notes 2000 2000 0    50   ~ 10
 COMMUNICATIONS
 Text Label 7200 2700 0    50   ~ 0
 BT_RST
-Text Notes 7000 2900 0    50   ~ 0
-For Bluetooth DFU\nMight not work with Nano USB-UART
+Text Notes 7000 3000 0    50   ~ 0
+For Bluetooth DFU\nMight not work with \nNano USB-UART
 $Comp
 L Connector_Generic:Conn_01x04 J10
 U 1 1 5E04EA4E
@@ -1516,12 +1516,9 @@ F 3 "~" H 5200 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 2700 5150 2700
-Wire Wire Line
 	4900 2800 4900 2700
 Wire Wire Line
 	4900 2700 5050 2700
-Connection ~ 5050 2700
 Wire Wire Line
 	5050 2600 4600 2600
 Wire Wire Line
@@ -1794,8 +1791,8 @@ U 1 1 5E130C16
 P 10300 1500
 F 0 "J4" H 10380 1542 50  0000 L CNN
 F 1 "393800103" H 10380 1451 50  0000 L CNN
-F 2 "TerminalBlock_Philmore:TerminalBlock_Philmore_TB133_1x03_P5.00mm_Horizontal" H 10300 1500 50  0001 C CNN
-F 3 "~" H 10300 1500 50  0001 C CNN
+F 2 "bifrost:TerminalBlock_Molex_393800103_1x03_P6.35mm_Horizontal" H 10300 1500 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/393800102_sd.pdf" H 10300 1500 50  0001 C CNN
 	1    10300 1500
 	1    0    0    -1  
 $EndComp
@@ -1805,8 +1802,8 @@ U 1 1 5E131E0D
 P 10300 1900
 F 0 "J5" H 10380 1942 50  0000 L CNN
 F 1 "393800103" H 10380 1851 50  0000 L CNN
-F 2 "TerminalBlock_Philmore:TerminalBlock_Philmore_TB133_1x03_P5.00mm_Horizontal" H 10300 1900 50  0001 C CNN
-F 3 "~" H 10300 1900 50  0001 C CNN
+F 2 "bifrost:TerminalBlock_Molex_393800103_1x03_P6.35mm_Horizontal" H 10300 1900 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/393800102_sd.pdf" H 10300 1900 50  0001 C CNN
 	1    10300 1900
 	1    0    0    -1  
 $EndComp
@@ -1816,8 +1813,8 @@ U 1 1 5E132048
 P 10300 2400
 F 0 "J6" H 10380 2442 50  0000 L CNN
 F 1 "393800103" H 10380 2351 50  0000 L CNN
-F 2 "TerminalBlock_Philmore:TerminalBlock_Philmore_TB133_1x03_P5.00mm_Horizontal" H 10300 2400 50  0001 C CNN
-F 3 "~" H 10300 2400 50  0001 C CNN
+F 2 "bifrost:TerminalBlock_Molex_393800103_1x03_P6.35mm_Horizontal" H 10300 2400 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/393800102_sd.pdf" H 10300 2400 50  0001 C CNN
 	1    10300 2400
 	1    0    0    -1  
 $EndComp
@@ -1827,8 +1824,8 @@ U 1 1 5E132306
 P 10300 2800
 F 0 "J7" H 10380 2842 50  0000 L CNN
 F 1 "393800103" H 10380 2751 50  0000 L CNN
-F 2 "TerminalBlock_Philmore:TerminalBlock_Philmore_TB133_1x03_P5.00mm_Horizontal" H 10300 2800 50  0001 C CNN
-F 3 "~" H 10300 2800 50  0001 C CNN
+F 2 "bifrost:TerminalBlock_Molex_393800103_1x03_P6.35mm_Horizontal" H 10300 2800 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/393800102_sd.pdf" H 10300 2800 50  0001 C CNN
 	1    10300 2800
 	1    0    0    -1  
 $EndComp
@@ -1884,8 +1881,8 @@ U 1 1 5E1895DB
 P 8800 1400
 F 0 "J2" H 8880 1392 50  0000 L CNN
 F 1 "393800102" H 8880 1301 50  0000 L CNN
-F 2 "" H 8800 1400 50  0001 C CNN
-F 3 "~" H 8800 1400 50  0001 C CNN
+F 2 "bifrost:TerminalBlock_Molex_393800102_1x02_P6.35mm_Horizontal" H 8800 1400 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/393800102_sd.pdf" H 8800 1400 50  0001 C CNN
 	1    8800 1400
 	1    0    0    -1  
 $EndComp
@@ -1910,7 +1907,7 @@ Wire Wire Line
 	8500 1500 8500 1600
 Text Notes 8800 3000 0    50   ~ 0
 Molex\n393800102\n01x02 6.35mm 30A
-Text Notes 8800 800  0    100  ~ 20
+Text Notes 8400 800  0    100  ~ 20
 POWER CONNECTORS
 Text Notes 8600 1000 0    50   ~ 10
 LED POWER IN
@@ -2486,8 +2483,8 @@ U 1 1 5E006713
 P 8800 2300
 F 0 "J3" H 8880 2292 50  0000 L CNN
 F 1 "393800102" H 8880 2201 50  0000 L CNN
-F 2 "" H 8800 2300 50  0001 C CNN
-F 3 "~" H 8800 2300 50  0001 C CNN
+F 2 "bifrost:TerminalBlock_Molex_393800102_1x02_P6.35mm_Horizontal" H 8800 2300 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/393800102_sd.pdf" H 8800 2300 50  0001 C CNN
 	1    8800 2300
 	1    0    0    -1  
 $EndComp
@@ -2560,7 +2557,7 @@ P 7800 1400
 F 0 "J1" H 7880 1392 50  0000 L CNN
 F 1 "395430602" H 7880 1301 50  0000 L CNN
 F 2 "bifrost:TerminalBlock_Molex_395430602_1x02_P5.00mm_Horizontal" H 7800 1400 50  0001 C CNN
-F 3 "~" H 7800 1400 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/395430602_sd.pdf" H 7800 1400 50  0001 C CNN
 	1    7800 1400
 	1    0    0    -1  
 $EndComp
@@ -2676,4 +2673,12 @@ Text Notes 7800 1900 0    50   ~ 0
 Molex \n395430602\n01x02 5.0mm
 Text Notes 10300 3300 0    50   ~ 0
 Molex\n393800103\n01x03 6.35mm 30A
+Text Notes 8800 4700 0    50   ~ 0
+Separate power domains for each pair of outputs\nto enable higher current per LED output
+Text Notes 1000 1000 0    50   ~ 0
+AUDIO JACK
+Text Notes 2800 1000 0    50   ~ 0
+MICROPHONE MODULE
+Text Notes 4600 3700 0    50   ~ 0
+5V -> 3V3
 $EndSCHEMATC
