@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Bifrost RGB LED Controller"
-Date "2019-12-20"
+Date "2019-12-21"
 Rev "A"
 Comp "Ruddock House Electrical Engineering"
 Comment1 "California Institute of Technology"
@@ -1459,10 +1459,10 @@ Wire Wire Line
 Text Notes 1200 2200 0    50   ~ 0
 I2C
 $Comp
-L Connector_Generic:Conn_01x06 J11
+L Connector_Generic:Conn_01x06 J12
 U 1 1 5E0648E5
 P 2300 2800
-F 0 "J11" H 2218 3217 50  0000 C CNN
+F 0 "J12" H 2218 3217 50  0000 C CNN
 F 1 "Conn_0.1_01x06" H 2218 3126 50  0000 C CNN
 F 2 "" H 2300 2800 50  0001 C CNN
 F 3 "~" H 2300 2800 50  0001 C CNN
@@ -2781,4 +2781,51 @@ Wire Wire Line
 	5400 3500 5600 3500
 Text Notes 4900 3800 0    50   ~ 0
 Current\nLimiting\n300 - 500
+$Comp
+L Connector_Generic:Conn_01x04 J11
+U 1 1 5DFF0971
+P 1000 3400
+F 0 "J11" H 918 3717 50  0000 C CNN
+F 1 "Conn_0.1_01x04" H 918 3626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1000 3400 50  0001 C CNN
+F 3 "~" H 1000 3400 50  0001 C CNN
+	1    1000 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR0122
+U 1 1 5DFF097B
+P 1800 3300
+F 0 "#PWR0122" H 1800 3050 50  0001 C CNN
+F 1 "GNDD" H 1804 3145 50  0000 C CNN
+F 2 "" H 1800 3300 50  0001 C CNN
+F 3 "" H 1800 3300 50  0001 C CNN
+	1    1800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0123
+U 1 1 5DFF0985
+P 1600 3200
+F 0 "#PWR0123" H 1600 3050 50  0001 C CNN
+F 1 "+5V" H 1615 3373 50  0000 C CNN
+F 2 "" H 1600 3200 50  0001 C CNN
+F 3 "" H 1600 3200 50  0001 C CNN
+	1    1600 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 3200 1600 3400
+Wire Wire Line
+	1600 3400 1200 3400
+Wire Wire Line
+	1800 3300 1200 3300
+Text Label 1300 3500 0    50   ~ 0
+I2C_SDA
+Text Label 1300 3600 0    50   ~ 0
+I2C_SCL
+Wire Wire Line
+	1600 3500 1200 3500
+Wire Wire Line
+	1600 3600 1200 3600
 $EndSCHEMATC
