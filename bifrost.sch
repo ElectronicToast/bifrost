@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Bifrost RGB LED Controller"
-Date "2019-12-21"
+Date "2019-12-22"
 Rev "A"
 Comp "Ruddock House Electrical Engineering"
 Comment1 "California Institute of Technology"
@@ -1464,7 +1464,7 @@ U 1 1 5E0648E5
 P 2300 2800
 F 0 "J12" H 2218 3217 50  0000 C CNN
 F 1 "Conn_0.1_01x06" H 2218 3126 50  0000 C CNN
-F 2 "" H 2300 2800 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 2300 2800 50  0001 C CNN
 F 3 "~" H 2300 2800 50  0001 C CNN
 	1    2300 2800
 	-1   0    0    -1  
@@ -1497,7 +1497,7 @@ U 1 1 5E0777C2
 P 5200 2600
 F 0 "JP4" H 5400 2650 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 5200 2714 50  0001 C CNN
-F 2 "" H 5200 2600 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 5200 2600 50  0001 C CNN
 F 3 "~" H 5200 2600 50  0001 C CNN
 	1    5200 2600
 	1    0    0    -1  
@@ -1508,7 +1508,7 @@ U 1 1 5E07EEED
 P 5200 2700
 F 0 "JP5" H 5400 2750 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 5200 2814 50  0001 C CNN
-F 2 "" H 5200 2700 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 5200 2700 50  0001 C CNN
 F 3 "~" H 5200 2700 50  0001 C CNN
 	1    5200 2700
 	1    0    0    -1  
@@ -1535,7 +1535,7 @@ U 1 1 5E08B5F0
 P 6800 2700
 F 0 "JP6" H 7000 2750 50  0000 C CNN
 F 1 "SolderJumper_2_Open" H 6800 2814 50  0001 C CNN
-F 2 "" H 6800 2700 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 6800 2700 50  0001 C CNN
 F 3 "~" H 6800 2700 50  0001 C CNN
 	1    6800 2700
 	1    0    0    -1  
