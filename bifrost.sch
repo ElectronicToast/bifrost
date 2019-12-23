@@ -1090,8 +1090,8 @@ Wire Wire Line
 Wire Wire Line
 	7000 3400 6600 3400
 Wire Wire Line
-	7500 2700 6950 2700
-Text Label 4600 2600 0    50   ~ 0
+	7100 2700 6950 2700
+Text Label 4200 2600 0    50   ~ 0
 BT_TX
 $Comp
 L Device:R_Small_US R16
@@ -1405,9 +1405,9 @@ Text Notes 2200 1000 0    50   ~ 10
 AUDIO
 Text Notes 2000 2000 0    50   ~ 10
 COMMUNICATIONS
-Text Label 7200 2700 0    50   ~ 0
+Text Label 7400 2700 0    50   ~ 0
 BT_RST
-Text Notes 7000 3000 0    50   ~ 0
+Text Notes 7000 3100 0    50   ~ 0
 For Bluetooth DFU\nMight not work with \nNano USB-UART
 $Comp
 L Connector_Generic:Conn_01x04 J10
@@ -1518,7 +1518,7 @@ Wire Wire Line
 Wire Wire Line
 	4500 2700 5050 2700
 Wire Wire Line
-	5050 2600 4600 2600
+	5050 2600 4200 2600
 Wire Wire Line
 	5350 2600 5600 2600
 Wire Wire Line
@@ -2828,4 +2828,17 @@ Wire Wire Line
 	1600 3500 1200 3500
 Wire Wire Line
 	1600 3600 1200 3600
+$Comp
+L Device:C_Small C12
+U 1 1 5E00E757
+P 7200 2700
+F 0 "C12" V 6971 2700 50  0000 C CNN
+F 1 "0.1uF" V 7062 2700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7200 2700 50  0001 C CNN
+F 3 "~" H 7200 2700 50  0001 C CNN
+	1    7200 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 2700 7300 2700
 $EndSCHEMATC
