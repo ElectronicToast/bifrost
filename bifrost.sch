@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Bifrost RGB LED Controller"
-Date "2019-12-22"
+Date "2019-12-25"
 Rev "A"
 Comp "Ruddock House Electrical Engineering"
 Comment1 "California Institute of Technology"
@@ -1035,12 +1035,11 @@ Wire Wire Line
 	6600 3700 7300 3700
 Wire Wire Line
 	6600 3800 7600 3800
-NoConn ~ 6600 3600
 Wire Wire Line
 	5400 3000 5600 3000
 Wire Wire Line
 	5400 3100 5600 3100
-Text Label 5400 3900 0    50   ~ 0
+Text Label 5400 3600 0    50   ~ 0
 BTN4
 Wire Wire Line
 	4800 3200 5200 3200
@@ -1050,8 +1049,6 @@ Text Label 7100 5500 0    50   ~ 0
 LED2
 Text Label 7400 5500 0    50   ~ 0
 LED3
-Wire Wire Line
-	5400 3900 5600 3900
 Wire Wire Line
 	4800 3500 5200 3500
 Wire Wire Line
@@ -1069,11 +1066,6 @@ OUT4
 Wire Wire Line
 	5400 3600 5600 3600
 Wire Wire Line
-	5400 3700 5600 3700
-Wire Wire Line
-	5400 3800 5600 3800
-NoConn ~ 5600 4000
-Wire Wire Line
 	5400 2900 5600 2900
 Text Label 5400 2900 0    50   ~ 0
 BTN1
@@ -1089,8 +1081,6 @@ Wire Wire Line
 	7000 3300 6600 3300
 Wire Wire Line
 	7000 3400 6600 3400
-Wire Wire Line
-	7100 2700 6950 2700
 Text Label 4200 2600 0    50   ~ 0
 BT_TX
 $Comp
@@ -1405,7 +1395,7 @@ Text Notes 2200 1000 0    50   ~ 10
 AUDIO
 Text Notes 2000 2000 0    50   ~ 10
 COMMUNICATIONS
-Text Label 7400 2700 0    50   ~ 0
+Text Label 7200 2700 0    50   ~ 0
 BT_RST
 Text Notes 7000 3100 0    50   ~ 0
 For Bluetooth DFU\nMight not work with \nNano USB-UART
@@ -1461,23 +1451,23 @@ I2C
 $Comp
 L Connector_Generic:Conn_01x06 J12
 U 1 1 5E0648E5
-P 2300 2800
-F 0 "J12" H 2218 3217 50  0000 C CNN
-F 1 "Conn_0.1_01x06" H 2218 3126 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 2300 2800 50  0001 C CNN
-F 3 "~" H 2300 2800 50  0001 C CNN
-	1    2300 2800
+P 2100 2800
+F 0 "J12" H 2018 3217 50  0000 C CNN
+F 1 "Conn_0.1_01x06" H 2018 3126 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 2100 2800 50  0001 C CNN
+F 3 "~" H 2100 2800 50  0001 C CNN
+	1    2100 2800
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GNDD #PWR016
 U 1 1 5E068819
-P 3100 2800
-F 0 "#PWR016" H 3100 2550 50  0001 C CNN
-F 1 "GNDD" H 3104 2645 50  0000 C CNN
-F 2 "" H 3100 2800 50  0001 C CNN
-F 3 "" H 3100 2800 50  0001 C CNN
-	1    3100 2800
+P 2900 2800
+F 0 "#PWR016" H 2900 2550 50  0001 C CNN
+F 1 "GNDD" H 2904 2645 50  0000 C CNN
+F 2 "" H 2900 2800 50  0001 C CNN
+F 3 "" H 2900 2800 50  0001 C CNN
+	1    2900 2800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1547,88 +1537,80 @@ Isolate for \nprogramming
 $Comp
 L power:+5V #PWR015
 U 1 1 5E091085
-P 3100 2600
-F 0 "#PWR015" H 3100 2450 50  0001 C CNN
-F 1 "+5V" H 3115 2773 50  0000 C CNN
-F 2 "" H 3100 2600 50  0001 C CNN
-F 3 "" H 3100 2600 50  0001 C CNN
-	1    3100 2600
+P 2900 2600
+F 0 "#PWR015" H 2900 2450 50  0001 C CNN
+F 1 "+5V" H 2915 2773 50  0000 C CNN
+F 2 "" H 2900 2600 50  0001 C CNN
+F 3 "" H 2900 2600 50  0001 C CNN
+	1    2900 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3100 2700 2500 2700
+	2900 2700 2300 2700
 Wire Wire Line
-	3100 2600 3100 2700
-Text Label 2500 3000 0    50   ~ 0
+	2900 2600 2900 2700
+Text Label 2300 3000 0    50   ~ 0
 BT_RX
 $Comp
 L Transistor_FET:BSS138 Q1
 U 1 1 5E09FA26
-P 3400 3100
-F 0 "Q1" H 3604 3146 50  0000 L CNN
-F 1 "2N7002" H 3604 3055 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3600 3025 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 3400 3100 50  0001 L CNN
-	1    3400 3100
+P 3500 3100
+F 0 "Q1" H 3704 3146 50  0000 L CNN
+F 1 "2N7002" H 3704 3055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3700 3025 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 3500 3100 50  0001 L CNN
+	1    3500 3100
 	1    0    0    -1  
 $EndComp
-Text Notes 3600 3300 0    50   ~ 0
+Text Notes 3700 3300 0    50   ~ 0
 SOT-23
 $Comp
 L Device:R_Small_US R13
 U 1 1 5E0A121A
-P 3100 3300
-F 0 "R13" H 3168 3346 50  0000 L CNN
-F 1 "10K" H 3168 3255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3100 3300 50  0001 C CNN
-F 3 "~" H 3100 3300 50  0001 C CNN
-	1    3100 3300
+P 2900 3300
+F 0 "R13" H 2950 3300 50  0000 L CNN
+F 1 "10K" H 2950 3200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2900 3300 50  0001 C CNN
+F 3 "~" H 2900 3300 50  0001 C CNN
+	1    2900 3300
 	1    0    0    -1  
 $EndComp
-Text Label 3500 2800 0    50   ~ 0
+Text Label 3600 2800 0    50   ~ 0
 BT_RST
 Wire Wire Line
-	3500 2900 3500 2800
+	3600 2900 3600 2800
 Wire Wire Line
-	3200 3100 3100 3100
-Wire Wire Line
-	3100 3200 3100 3100
+	2900 3200 2900 3100
 $Comp
 L power:GNDD #PWR021
 U 1 1 5E0B5B0A
-P 3500 3500
-F 0 "#PWR021" H 3500 3250 50  0001 C CNN
-F 1 "GNDD" H 3504 3345 50  0000 C CNN
-F 2 "" H 3500 3500 50  0001 C CNN
-F 3 "" H 3500 3500 50  0001 C CNN
-	1    3500 3500
+P 3600 3500
+F 0 "#PWR021" H 3600 3250 50  0001 C CNN
+F 1 "GNDD" H 3604 3345 50  0000 C CNN
+F 2 "" H 3600 3500 50  0001 C CNN
+F 3 "" H 3600 3500 50  0001 C CNN
+	1    3600 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 3500 3500 3300
+	3600 3500 3600 3300
 Wire Wire Line
-	3500 3500 3100 3500
-Wire Wire Line
-	3100 3500 3100 3400
-Connection ~ 3500 3500
+	2900 3500 2900 3400
 $Comp
 L Device:R_Small_US R9
 U 1 1 5E0BE187
-P 2900 3100
+P 3100 3100
 F 0 "R9" V 3000 3100 50  0000 C CNN
-F 1 "100" V 3100 3100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2900 3100 50  0001 C CNN
-F 3 "~" H 2900 3100 50  0001 C CNN
-	1    2900 3100
+F 1 "100" V 3200 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3100 3100 50  0001 C CNN
+F 3 "~" H 3100 3100 50  0001 C CNN
+	1    3100 3100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3000 3100 3100 3100
-Connection ~ 3100 3100
+	2600 3000 2300 3000
 Wire Wire Line
-	2800 3000 2500 3000
-Wire Wire Line
-	2800 2900 2500 2900
+	2600 2900 2300 2900
 Text Notes 2800 2200 0    50   ~ 0
 HC-05 BLUETOOTH
 Text Notes 2100 4100 0    100  ~ 20
@@ -2151,11 +2133,11 @@ F 3 "~" V 7400 5900 50  0001 C CNN
 	1    7400 5900
 	0    -1   -1   0   
 $EndComp
-Text Label 5400 3600 0    50   ~ 0
+Text Label 6700 3600 0    50   ~ 0
 LED1
-Text Label 5400 3700 0    50   ~ 0
+Text Label 6700 3900 0    50   ~ 0
 LED2
-Text Label 5400 3800 0    50   ~ 0
+Text Label 6700 4000 0    50   ~ 0
 LED3
 Text Notes 6300 4600 0    50   ~ 0
 Isolate for \nprogramming
@@ -2170,8 +2152,6 @@ F 3 "" H 6200 4700 50  0001 C CNN
 	1    6200 4700
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6600 4000
-NoConn ~ 6600 3900
 $Comp
 L Device:C_Small C5
 U 1 1 5E3CA27E
@@ -2517,8 +2497,8 @@ Wire Wire Line
 	6000 2300 5900 2300
 Wire Wire Line
 	5900 2300 5900 2100
-NoConn ~ 2800 2600
-Text Label 2500 3100 0    50   ~ 0
+NoConn ~ 2600 2600
+Text Label 2300 3100 0    50   ~ 0
 BT_ST
 $Comp
 L power:VCC #PWR0117
@@ -2749,17 +2729,17 @@ $EndComp
 Wire Wire Line
 	4200 3100 4500 3100
 Wire Wire Line
-	3500 2800 3800 2800
-Text Label 2500 2900 0    50   ~ 0
+	3600 2800 3900 2800
+Text Label 2300 2900 0    50   ~ 0
 BT_TX
-Text Label 2500 2600 0    50   ~ 0
+Text Label 2300 2600 0    50   ~ 0
 BT_EN
 Wire Wire Line
-	2500 2800 3100 2800
+	2300 2800 2900 2800
 Wire Wire Line
-	2500 3100 2800 3100
+	2300 3100 2600 3100
 Wire Wire Line
-	2800 2600 2500 2600
+	2600 2600 2300 2600
 $Comp
 L Device:R_Small_US R26
 U 1 1 5DFE9495
@@ -2779,7 +2759,7 @@ Wire Wire Line
 	5400 3400 5600 3400
 Wire Wire Line
 	5400 3500 5600 3500
-Text Notes 4900 3800 0    50   ~ 0
+Text Notes 4800 3800 0    50   ~ 0
 Current\nLimiting\n300 - 500
 $Comp
 L Connector_Generic:Conn_01x04 J11
@@ -2831,14 +2811,46 @@ Wire Wire Line
 $Comp
 L Device:C_Small C12
 U 1 1 5E00E757
-P 7200 2700
-F 0 "C12" V 6971 2700 50  0000 C CNN
-F 1 "0.1uF" V 7062 2700 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7200 2700 50  0001 C CNN
-F 3 "~" H 7200 2700 50  0001 C CNN
-	1    7200 2700
+P 2700 3100
+F 0 "C12" V 2800 3100 50  0000 C CNN
+F 1 "0.1uF" V 2900 3100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2700 3100 50  0001 C CNN
+F 3 "~" H 2700 3100 50  0001 C CNN
+	1    2700 3100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7700 2700 7300 2700
+	3200 3100 3300 3100
+Wire Wire Line
+	2900 3500 3600 3500
+Connection ~ 3600 3500
+Wire Wire Line
+	2800 3100 2900 3100
+Connection ~ 2900 3100
+Wire Wire Line
+	2900 3100 3000 3100
+Wire Wire Line
+	6950 2700 7500 2700
+Wire Wire Line
+	6900 3600 6600 3600
+Wire Wire Line
+	6900 3900 6600 3900
+Wire Wire Line
+	6900 4000 6600 4000
+Wire Wire Line
+	5600 4000 5300 4000
+Text Label 5300 4000 0    50   ~ 0
+SCK
+Text Label 5300 3900 0    50   ~ 0
+MISO
+Text Label 5300 3800 0    50   ~ 0
+MOSI
+Text Label 5300 3700 0    50   ~ 0
+~CS
+Wire Wire Line
+	5300 3800 5600 3800
+Wire Wire Line
+	5300 3700 5600 3700
+Wire Wire Line
+	5300 3900 5600 3900
 $EndSCHEMATC
