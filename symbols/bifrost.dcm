@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Micro_SD_Card_Det_Single
+D Micro SD Card Socket with card detection pin
+K connector SD microsd
+$ENDCMP
+#
+#End Doc Library
