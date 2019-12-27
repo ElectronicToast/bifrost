@@ -1463,7 +1463,7 @@ Wire Wire Line
 Wire Wire Line
 	9900 1300 9900 1400
 Connection ~ 9900 1400
-Text Notes 8900 800  0    100  ~ 20
+Text Notes 8700 800  0    100  ~ 20
 POWER CONNECTORS
 Text Notes 10100 1000 0    50   ~ 10
 LED OUTPUT
@@ -1583,9 +1583,9 @@ Wire Wire Line
 Connection ~ 10000 2000
 Connection ~ 9900 2200
 Text Notes 5700 7700 0    50   ~ 0
-FOOTPRINTS\n\nPASSIVE\nLED\nSOLDER JMP\nJUMPER
-Text Notes 6400 7700 0    50   ~ 0
-0805\n1206\nSolder pad\n0.1" male
+FOOTPRINTS\n\nPASSIVE\nLED\nSOLDER JMP\nJUMPER\nIC
+Text Notes 6300 7700 0    50   ~ 0
+0805\n1206\nSolder pad\n0.1" male\nSOIC or SOT-23
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5E06474F
@@ -2373,8 +2373,8 @@ F 3 "~" H 5500 1600 50  0001 C CNN
 	1    5500 1600
 	1    0    0    -1  
 $EndComp
-Text Notes 7300 2100 0    50   ~ 0
-For Bluetooth DFU\nMight not work with \nNano USB-UART
+Text Notes 7300 1900 0    50   ~ 0
+For Bluetooth\nprogramming
 Text Label 7500 1700 0    50   ~ 0
 BT_RST
 Text Label 4500 1100 0    50   ~ 0
@@ -2740,4 +2740,6 @@ Wire Wire Line
 	2300 3100 3000 3100
 Wire Wire Line
 	3500 3100 3600 3100
+Text Notes 2600 3800 0    50   ~ 10
+DO NOT USE USB-SERIAL WHEN\nHC-05 IS PLUGGED IN, WITHOUT\nOPENING JUMPERS
 $EndSCHEMATC
