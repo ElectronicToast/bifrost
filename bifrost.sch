@@ -2164,7 +2164,7 @@ F 3 "" H 4800 2600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4800 2300 4500 2300
-Text Label 4500 2200 0    50   ~ 0
+Text Label 4500 2300 0    50   ~ 0
 BT_RX
 $Comp
 L Device:R_Small_US R3
@@ -2709,23 +2709,23 @@ DO NOT EXCEED\n5V SUPPLY RATINGS\nON LED OUTPUTS
 $Comp
 L Device:Jumper_NO_Small JP1
 U 1 1 5E1552B0
-P 5500 1800
-F 0 "JP1" H 5650 1850 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 5500 1894 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5500 1800 50  0001 C CNN
-F 3 "~" H 5500 1800 50  0001 C CNN
-	1    5500 1800
+P 5600 1800
+F 0 "JP1" H 5750 1850 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 5600 1894 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5600 1800 50  0001 C CNN
+F 3 "~" H 5600 1800 50  0001 C CNN
+	1    5600 1800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Jumper_NO_Small JP2
 U 1 1 5E158650
-P 5500 1900
-F 0 "JP2" H 5650 1950 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 5500 1994 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5500 1900 50  0001 C CNN
-F 3 "~" H 5500 1900 50  0001 C CNN
-	1    5500 1900
+P 5600 1900
+F 0 "JP2" H 5750 1950 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 5600 1994 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5600 1900 50  0001 C CNN
+F 3 "~" H 5600 1900 50  0001 C CNN
+	1    5600 1900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2740,15 +2740,15 @@ F 3 "~" H 7100 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5400 1800 5350 1800
+	5500 1800 5350 1800
 Wire Wire Line
-	4800 1900 5400 1900
+	4800 1900 5500 1900
 Wire Wire Line
-	5600 1800 5900 1800
+	5700 1800 5900 1800
 Wire Wire Line
 	6900 1800 7000 1800
 Wire Wire Line
 	7200 1800 7700 1800
 Wire Wire Line
-	5600 1900 5900 1900
+	5700 1900 5900 1900
 $EndSCHEMATC
