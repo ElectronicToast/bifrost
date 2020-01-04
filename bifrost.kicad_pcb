@@ -249,7 +249,7 @@
     (descr "Arduino Nano, http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf")
     (tags "Arduino Nano")
     (path /5DFA1DAE)
-    (fp_text reference A1 (at 7.62 -5.08 90) (layer F.SilkS)
+    (fp_text reference A1 (at 17.526 -3.048 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Arduino_Nano_v3.x (at 8.89 19.05) (layer F.Fab)
@@ -620,7 +620,7 @@
   )
 
   (module Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5E085EA9)
-    (at 182.88 67.31 90)
+    (at 183.515 67.31 90)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5E3D1341)
@@ -656,7 +656,7 @@
   )
 
   (module Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5E114ED5)
-    (at 182.88 72.39 90)
+    (at 183.515 72.39 90)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5E3D0821)
@@ -692,7 +692,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5E1004DD)
-    (at 167.64 80.01)
+    (at 166.624 78.74)
     (descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x02 2.54mm single row")
     (path /5E158650)
@@ -732,7 +732,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5E1005A0)
-    (at 162.56 80.01)
+    (at 161.544 78.74)
     (descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x02 2.54mm single row")
     (path /5E1592AD)
@@ -772,7 +772,7 @@
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical (layer F.Cu) (tedit 59FED5CC) (tstamp 5E085E3B)
-    (at 165.1 80.01)
+    (at 164.084 78.74)
     (descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x02 2.54mm single row")
     (path /5E1552B0)
@@ -1047,7 +1047,7 @@
     (descr "Terminal Block Phoenix MKDS-1,5-2, 2 pins, pitch 5mm, size 10x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix")
     (tags "THT Terminal Block Phoenix MKDS-1,5-2 pitch 5mm size 10x9.8mm^2 drill 1.3mm pad 2.6mm")
     (path /5E0A107A)
-    (fp_text reference J2 (at 2.5 -6.26 90) (layer F.SilkS)
+    (fp_text reference J2 (at -3.208 2.413 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 395430002 (at 2.5 5 90) (layer F.Fab) hide
@@ -1089,7 +1089,7 @@
     (descr "Terminal Block Phoenix MKDS-1,5-2, 2 pins, pitch 5mm, size 10x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix")
     (tags "THT Terminal Block Phoenix MKDS-1,5-2 pitch 5mm size 10x9.8mm^2 drill 1.3mm pad 2.6mm")
     (path /5E08D142)
-    (fp_text reference J1 (at 2.5 -6.26 90) (layer F.SilkS)
+    (fp_text reference J1 (at 8.382 2.413 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 395430002 (at 2.5 5 90) (layer F.Fab) hide
@@ -1273,7 +1273,7 @@
   )
 
   (module Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5E085B9D)
-    (at 177.8 67.31)
+    (at 179.07 67.31)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor handsolder")
     (path /5E06D268)
@@ -1549,7 +1549,7 @@
   )
 
   (module Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5E008B89)
-    (at 144.78 62.23 90)
+    (at 145.034 62.23 90)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5DFECCC4)
@@ -1585,7 +1585,7 @@
   )
 
   (module Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5E112355)
-    (at 157.48 62.23 90)
+    (at 157.734 62.23 90)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5DFECADA)
@@ -1621,7 +1621,7 @@
   )
 
   (module Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5E10AEFE)
-    (at 170.18 62.23 90)
+    (at 170.434 62.23 90)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5DFEC7BC)
@@ -1657,7 +1657,7 @@
   )
 
   (module Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5E11221E)
-    (at 182.88 62.23 90)
+    (at 183.134 62.23 90)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5DFE9495)
@@ -1981,7 +1981,7 @@
   )
 
   (module Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5E112B77)
-    (at 140.725 114.3)
+    (at 140.97 114.3)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5E12282B)
@@ -2433,7 +2433,7 @@
     (descr "Through hole straight socket strip, 1x03, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
     (tags "Through hole socket strip THT 1x03 2.54mm single row")
     (path /5DFAC49B)
-    (fp_text reference J8 (at 0 -2.77 90) (layer F.SilkS)
+    (fp_text reference J8 (at -2.286 -0.508 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Conn_0.1_01x03 (at 0 7.85 90) (layer F.Fab)
@@ -2826,7 +2826,7 @@
   )
 
   (module Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5E00874A)
-    (at 129.54 109.22)
+    (at 129.54 107.95)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor handsolder")
     (path /5DFAEE52)
