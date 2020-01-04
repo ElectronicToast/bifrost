@@ -2218,7 +2218,7 @@ Text Label 7000 3000 0    50   ~ 0
 LED2
 Text Label 7000 2700 0    50   ~ 0
 LED1
-Text Notes 7200 2100 0    50   ~ 0
+Text Notes 7300 2100 0    50   ~ 0
 For Bluetooth\nprogramming
 Text Label 7400 1900 0    50   ~ 0
 BT_RST
@@ -2581,55 +2581,12 @@ Text Label 8100 5800 0    50   ~ 0
 MISO
 Text Notes 8700 3000 0    50   ~ 10
 DO NOT EXCEED\n5V SUPPLY RATINGS\nON LED OUTPUTS
-$Comp
-L Device:Jumper_NO_Small JP3
-U 1 1 5E1552B0
-P 5600 1800
-F 0 "JP3" H 5750 1850 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 5600 1894 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5600 1800 50  0001 C CNN
-F 3 "~" H 5600 1800 50  0001 C CNN
-	1    5600 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper_NO_Small JP4
-U 1 1 5E158650
-P 5600 1900
-F 0 "JP4" H 5750 1950 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 5600 1994 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5600 1900 50  0001 C CNN
-F 3 "~" H 5600 1900 50  0001 C CNN
-	1    5600 1900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5500 1800 5350 1800
+	4800 1900 5450 1900
 Wire Wire Line
-	4800 1900 5500 1900
-Wire Wire Line
-	5700 1800 5900 1800
-Wire Wire Line
-	6900 1900 7000 1900
-Wire Wire Line
-	7200 1900 7700 1900
-Wire Wire Line
-	5700 1900 5900 1900
-$Comp
-L Device:Jumper_NO_Small JP1
-U 1 1 5E07A366
-P 7600 1400
-F 0 "JP1" H 7750 1450 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 7600 1494 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7600 1400 50  0001 C CNN
-F 3 "~" H 7600 1400 50  0001 C CNN
-	1    7600 1400
-	1    0    0    -1  
-$EndComp
+	6900 1900 6950 1900
 Wire Wire Line
 	6600 1400 6800 1400
-Wire Wire Line
-	7700 1400 7900 1400
 Wire Wire Line
 	7900 1400 7900 1300
 $Comp
@@ -2771,17 +2728,6 @@ F 3 "" H 8200 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NO_Small JP2
-U 1 1 5E1592AD
-P 7100 1900
-F 0 "JP2" H 7250 1950 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 7100 1994 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7100 1900 50  0001 C CNN
-F 3 "~" H 7100 1900 50  0001 C CNN
-	1    7100 1900
-	-1   0    0    -1  
-$EndComp
-$Comp
 L MCU_Module:Arduino_Nano_v3.x A1
 U 1 1 5DFA1DAE
 P 6400 2400
@@ -2912,4 +2858,58 @@ F 3 "" H 4000 4700 50  0001 C CNN
 	1    4000 4700
 	1    0    0    -1  
 $EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5E703943
+P 7650 1400
+F 0 "JP1" H 7500 1450 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 7650 1514 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 7650 1400 50  0001 C CNN
+F 3 "~" H 7650 1400 50  0001 C CNN
+	1    7650 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP2
+U 1 1 5E705DE3
+P 7100 1900
+F 0 "JP2" H 7250 1950 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 7100 2014 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 7100 1900 50  0001 C CNN
+F 3 "~" H 7100 1900 50  0001 C CNN
+	1    7100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 5E7061E7
+P 5600 1800
+F 0 "JP3" H 5400 1850 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 5600 1914 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 5600 1800 50  0001 C CNN
+F 3 "~" H 5600 1800 50  0001 C CNN
+	1    5600 1800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 5E7065DB
+P 5600 1900
+F 0 "JP4" H 5400 1950 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 5600 2014 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 5600 1900 50  0001 C CNN
+F 3 "~" H 5600 1900 50  0001 C CNN
+	1    5600 1900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 1400 7900 1400
+Wire Wire Line
+	7250 1900 7700 1900
+Wire Wire Line
+	5450 1800 5350 1800
+Wire Wire Line
+	5750 1800 5900 1800
+Wire Wire Line
+	5750 1900 5900 1900
 $EndSCHEMATC
