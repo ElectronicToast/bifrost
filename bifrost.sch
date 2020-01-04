@@ -2912,49 +2912,76 @@ Wire Wire Line
 	5750 1800 5900 1800
 Wire Wire Line
 	5750 1900 5900 1900
-$Comp
-L bifrost:Conn_03x07_VCC_GND J13
-U 1 1 5E125B07
-P 6200 4900
-F 0 "J13" H 6200 5300 50  0000 L CNN
-F 1 "Conn_0.1_03x07" H 5900 4500 50  0000 L CNN
-F 2 "bifrost:PinHeader_03x07_P2.54mm_Vertical" H 6200 4900 50  0001 C CNN
-F 3 "~" H 6200 4900 50  0001 C CNN
-	1    6200 4900
-	1    0    0    -1  
-$EndComp
 Text Notes 5600 4300 0    100  ~ 20
 AUXILIARY I/O
-Text Label 5800 5200 0    50   ~ 0
+Text Label 5600 5200 0    50   ~ 0
 LED1
-Text Label 5800 5100 0    50   ~ 0
+Text Label 5600 5100 0    50   ~ 0
 LED2
-Text Label 5800 5000 0    50   ~ 0
+Text Label 5600 5000 0    50   ~ 0
 LED3
-Text Label 5800 4900 0    50   ~ 0
+Text Label 5600 4900 0    50   ~ 0
 BTN1
-Text Label 5800 4800 0    50   ~ 0
+Text Label 5600 4800 0    50   ~ 0
 BTN2
-Text Label 5800 4700 0    50   ~ 0
+Text Label 5600 4700 0    50   ~ 0
 BTN3
-Text Label 5800 4600 0    50   ~ 0
+Text Label 5600 4600 0    50   ~ 0
 BTN4
 Wire Wire Line
-	5800 4600 6000 4600
+	5600 4600 5800 4600
 Wire Wire Line
-	5800 4700 6000 4700
+	5600 4700 5800 4700
 Wire Wire Line
-	5800 4800 6000 4800
+	5600 4800 5800 4800
 Wire Wire Line
-	5800 4900 6000 4900
+	5600 4900 5800 4900
 Wire Wire Line
-	5800 5000 6000 5000
+	5600 5000 5800 5000
 Wire Wire Line
-	5800 5100 6000 5100
+	5600 5100 5800 5100
 Wire Wire Line
-	5800 5200 6000 5200
+	5600 5200 5800 5200
 Text Notes 5700 5600 0    50   ~ 0
 0.1" connector for \nalternative pin use
 Text Notes 5700 5900 0    50   ~ 0
 5V MIDDLE ROW\nGND END ROW\nNOT SHOWN
+$Comp
+L power:GNDD #PWR0107
+U 1 1 5E19522F
+P 6400 5200
+F 0 "#PWR0107" H 6400 4950 50  0001 C CNN
+F 1 "GNDD" H 6404 5045 50  0000 C CNN
+F 2 "" H 6400 5200 50  0001 C CNN
+F 3 "" H 6400 5200 50  0001 C CNN
+	1    6400 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 5200 6350 5200
+$Comp
+L power:+5V #PWR0108
+U 1 1 5E1A1452
+P 6400 4600
+F 0 "#PWR0108" H 6400 4450 50  0001 C CNN
+F 1 "+5V" H 6415 4773 50  0000 C CNN
+F 2 "" H 6400 4600 50  0001 C CNN
+F 3 "" H 6400 4600 50  0001 C CNN
+	1    6400 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4600 6350 4600
+$Comp
+L bifrost:Conn_03x07_23_Common J13
+U 1 1 5E1B0F30
+P 6050 4900
+F 0 "J13" H 6050 5300 50  0000 C CNN
+F 1 "Conn_03x07_23_Common" H 5800 4500 50  0000 C CNN
+F 2 "bifrost:PinHeader_03x07_P2.54mm_Vertical" H 6000 4900 50  0001 C CNN
+F 3 "~" H 6000 4900 50  0001 C CNN
+	1    6050 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 6400 5200
 $EndSCHEMATC
