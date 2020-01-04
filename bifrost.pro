@@ -1,4 +1,4 @@
-update=1/3/2020 8:32:46 PM
+update=1/3/2020 9:26:30 PM
 version=1
 last_client=kicad
 [general]
@@ -237,7 +237,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.1524
+Clearance=0.254
 TrackWidth=0.254
 ViaDiameter=0.762
 ViaDrill=0.381
@@ -248,7 +248,7 @@ dPairGap=0.254
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=AnalogSignal
-Clearance=0.1524
+Clearance=0.254
 TrackWidth=0.508
 ViaDiameter=0.762
 ViaDrill=0.381
@@ -259,7 +259,7 @@ dPairGap=0.254
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=IndicatorLED
-Clearance=0.1524
+Clearance=0.254
 TrackWidth=0.508
 ViaDiameter=0.762
 ViaDrill=0.381
