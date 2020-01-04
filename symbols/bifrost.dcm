@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP Conn_03x07_VCC_GND
+D Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 $CMP Micro_SD_Card_Det_Single
 D Micro SD Card Socket with card detection pin
 K connector SD microsd

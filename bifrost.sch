@@ -853,7 +853,7 @@ Wire Wire Line
 	4200 7300 4400 7300
 Connection ~ 4400 7300
 Text Notes 2500 1800 0    50   ~ 0
-Adafruit_MAX4486
+Adafruit MAX4486
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5DFF3537
@@ -1577,9 +1577,9 @@ $EndComp
 Connection ~ 10100 2000
 Connection ~ 10000 2200
 Text Notes 5500 7500 0    50   ~ 0
-FOOTPRINTS\n\nPASSIVE\nLED\nSOLDER JMP\nJUMPER\nIC
+FOOTPRINTS\n\nPASSIVE\nLED\nSOLDER JMP\nIC
 Text Notes 6100 7500 0    50   ~ 0
-0805\n1206\nSolder pad\n0.1" male\nSOIC or SOT-23
+0805\n1206\nSolder pad\nSOIC or SOT-23
 Wire Wire Line
 	8400 1500 8300 1500
 $Comp
@@ -2912,4 +2912,49 @@ Wire Wire Line
 	5750 1800 5900 1800
 Wire Wire Line
 	5750 1900 5900 1900
+$Comp
+L bifrost:Conn_03x07_VCC_GND J13
+U 1 1 5E125B07
+P 6200 4900
+F 0 "J13" H 6200 5300 50  0000 L CNN
+F 1 "Conn_0.1_03x07" H 5900 4500 50  0000 L CNN
+F 2 "bifrost:PinHeader_03x07_P2.54mm_Vertical" H 6200 4900 50  0001 C CNN
+F 3 "~" H 6200 4900 50  0001 C CNN
+	1    6200 4900
+	1    0    0    -1  
+$EndComp
+Text Notes 5700 4300 0    100  ~ 20
+AUXILIARY
+Text Label 5800 5200 0    50   ~ 0
+LED1
+Text Label 5800 5100 0    50   ~ 0
+LED2
+Text Label 5800 5000 0    50   ~ 0
+LED3
+Text Label 5800 4900 0    50   ~ 0
+BTN1
+Text Label 5800 4800 0    50   ~ 0
+BTN2
+Text Label 5800 4700 0    50   ~ 0
+BTN3
+Text Label 5800 4600 0    50   ~ 0
+BTN4
+Wire Wire Line
+	5800 4600 6000 4600
+Wire Wire Line
+	5800 4700 6000 4700
+Wire Wire Line
+	5800 4800 6000 4800
+Wire Wire Line
+	5800 4900 6000 4900
+Wire Wire Line
+	5800 5000 6000 5000
+Wire Wire Line
+	5800 5100 6000 5100
+Wire Wire Line
+	5800 5200 6000 5200
+Text Notes 5700 5600 0    50   ~ 0
+0.1" connector for \nalternative pin use
+Text Notes 5700 5900 0    50   ~ 0
+5V MIDDLE ROW\nGND END ROW\nNOT SHOWN
 $EndSCHEMATC
