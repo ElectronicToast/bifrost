@@ -2923,8 +2923,8 @@ F 3 "~" H 6200 4900 50  0001 C CNN
 	1    6200 4900
 	1    0    0    -1  
 $EndComp
-Text Notes 5700 4300 0    100  ~ 20
-AUXILIARY
+Text Notes 5600 4300 0    100  ~ 20
+AUXILIARY I/O
 Text Label 5800 5200 0    50   ~ 0
 LED1
 Text Label 5800 5100 0    50   ~ 0
