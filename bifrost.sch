@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Bifröst RGB LED Controller"
-Date "2019-12-28"
+Date "2020-01-03"
 Rev "A"
 Comp "Ruddock House Electrical Engineering"
 Comment1 "California Institute of Technology"
@@ -1179,7 +1179,7 @@ U 1 1 5E0648E5
 P 2100 2800
 F 0 "J11" H 2018 3217 50  0000 C CNN
 F 1 "Conn_0.1_01x06" H 2018 3126 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 2100 2800 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 2100 2800 50  0001 C CNN
 F 3 "~" H 2100 2800 50  0001 C CNN
 	1    2100 2800
 	-1   0    0    -1  
@@ -1581,13 +1581,7 @@ FOOTPRINTS\n\nPASSIVE\nLED\nSOLDER JMP\nJUMPER\nIC
 Text Notes 6100 7500 0    50   ~ 0
 0805\n1206\nSolder pad\n0.1" male\nSOIC or SOT-23
 Wire Wire Line
-	8400 1400 8300 1400
-Wire Wire Line
-	8300 1400 8300 1300
-Wire Wire Line
 	8400 1500 8300 1500
-Wire Wire Line
-	8300 1500 8300 1600
 $Comp
 L power:VBUS #PWR05
 U 1 1 5E06C7A7
@@ -2136,10 +2130,10 @@ Wire Wire Line
 Text Label 4500 2300 0    50   ~ 0
 BT_RX
 $Comp
-L Device:R_Small_US R4
+L Device:R_Small_US R2
 U 1 1 5E3D1341
 P 4800 2500
-F 0 "R4" H 4868 2546 50  0000 L CNN
+F 0 "R2" H 4868 2546 50  0000 L CNN
 F 1 "2K" H 4868 2455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4800 2500 50  0001 C CNN
 F 3 "~" H 4800 2500 50  0001 C CNN
@@ -2209,10 +2203,10 @@ Wire Wire Line
 Wire Wire Line
 	5700 2300 5900 2300
 $Comp
-L Device:R_Small_US R2
+L Device:R_Small_US R3
 U 1 1 5DFE9495
 P 5600 2300
-F 0 "R2" V 5550 2150 50  0000 C CNN
+F 0 "R3" V 5550 2150 50  0000 C CNN
 F 1 "330" V 5550 2450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5600 2300 50  0001 C CNN
 F 3 "~" H 5600 2300 50  0001 C CNN
@@ -2242,10 +2236,10 @@ F 3 "~" H 5600 2500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R3
+L Device:R_Small_US R4
 U 1 1 5DFEC7BC
 P 5600 2400
-F 0 "R3" V 5550 2250 50  0000 C CNN
+F 0 "R4" V 5550 2250 50  0000 C CNN
 F 1 "330" V 5550 2550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5600 2400 50  0001 C CNN
 F 3 "~" H 5600 2400 50  0001 C CNN
@@ -2270,9 +2264,9 @@ Text Label 7000 3000 0    50   ~ 0
 LED2
 Text Label 7000 2700 0    50   ~ 0
 LED1
-Text Notes 7200 2000 0    50   ~ 0
+Text Notes 7200 2100 0    50   ~ 0
 For Bluetooth\nprogramming
-Text Label 7400 1800 0    50   ~ 0
+Text Label 7400 1900 0    50   ~ 0
 BT_RST
 Text Label 4500 1300 0    50   ~ 0
 BT_TX
@@ -2385,7 +2379,6 @@ MIC_IN
 Text Notes 5900 800  0    100  ~ 20
 ARDUINO NANO
 NoConn ~ 6900 2200
-NoConn ~ 6900 1900
 $Comp
 L power:+3V3 #PWR03
 U 1 1 5DFA68B0
@@ -2406,17 +2399,6 @@ F 1 "+5V" H 7215 1473 50  0000 C CNN
 F 2 "" H 7200 1300 50  0001 C CNN
 F 3 "" H 7200 1300 50  0001 C CNN
 	1    7200 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L MCU_Module:Arduino_Nano_v3.x A1
-U 1 1 5DFA1DAE
-P 6400 2400
-F 0 "A1" H 5600 1500 50  0000 C CNN
-F 1 "Arduino_Nano_v3.x" H 5900 1400 50  0000 C CNN
-F 2 "bifrost:Arduino_Nano" H 6400 2400 50  0001 C CIN
-F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 6400 2400 50  0001 C CNN
-	1    6400 2400
 	1    0    0    -1  
 $EndComp
 Text Notes 5700 6300 0    100  ~ 20
@@ -2657,10 +2639,10 @@ MISO
 Text Notes 8700 3000 0    50   ~ 10
 DO NOT EXCEED\n5V SUPPLY RATINGS\nON LED OUTPUTS
 $Comp
-L Device:Jumper_NO_Small JP2
+L Device:Jumper_NO_Small JP3
 U 1 1 5E1552B0
 P 5600 1800
-F 0 "JP2" H 5750 1850 50  0000 C CNN
+F 0 "JP3" H 5750 1850 50  0000 C CNN
 F 1 "Jumper_NO_Small" H 5600 1894 50  0001 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5600 1800 50  0001 C CNN
 F 3 "~" H 5600 1800 50  0001 C CNN
@@ -2678,17 +2660,6 @@ F 3 "~" H 5600 1900 50  0001 C CNN
 	1    5600 1900
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Jumper_NO_Small JP3
-U 1 1 5E1592AD
-P 7100 1800
-F 0 "JP3" H 7250 1850 50  0000 C CNN
-F 1 "Jumper_NO_Small" H 7100 1894 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7100 1800 50  0001 C CNN
-F 3 "~" H 7100 1800 50  0001 C CNN
-	1    7100 1800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5500 1800 5350 1800
 Wire Wire Line
@@ -2696,9 +2667,9 @@ Wire Wire Line
 Wire Wire Line
 	5700 1800 5900 1800
 Wire Wire Line
-	6900 1800 7000 1800
+	6900 1900 7000 1900
 Wire Wire Line
-	7200 1800 7700 1800
+	7200 1900 7700 1900
 Wire Wire Line
 	5700 1900 5900 1900
 $Comp
@@ -2865,12 +2836,41 @@ $EndComp
 $Comp
 L power:GND #PWR013
 U 1 1 5E0E37FB
-P 8300 1600
-F 0 "#PWR013" H 8300 1350 50  0001 C CNN
-F 1 "GND" H 8305 1427 50  0000 C CNN
-F 2 "" H 8300 1600 50  0001 C CNN
-F 3 "" H 8300 1600 50  0001 C CNN
-	1    8300 1600
+P 8200 1600
+F 0 "#PWR013" H 8200 1350 50  0001 C CNN
+F 1 "GND" H 8205 1427 50  0000 C CNN
+F 2 "" H 8200 1600 50  0001 C CNN
+F 3 "" H 8200 1600 50  0001 C CNN
+	1    8200 1600
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Jumper_NO_Small JP2
+U 1 1 5E1592AD
+P 7100 1900
+F 0 "JP2" H 7250 1950 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 7100 1994 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7100 1900 50  0001 C CNN
+F 3 "~" H 7100 1900 50  0001 C CNN
+	1    7100 1900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 5DFA1DAE
+P 6400 2400
+F 0 "A1" H 5600 1500 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 5900 1400 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 6400 2400 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 6400 2400 50  0001 C CNN
+	1    6400 2400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6900 1800
+Wire Wire Line
+	8300 1300 8300 1500
+Wire Wire Line
+	8400 1400 8200 1400
+Wire Wire Line
+	8200 1400 8200 1600
 $EndSCHEMATC
