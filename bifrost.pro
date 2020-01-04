@@ -1,4 +1,4 @@
-update=1/3/2020 7:47:10 PM
+update=1/3/2020 8:32:46 PM
 version=1
 last_client=kicad
 [general]
@@ -258,6 +258,17 @@ dPairWidth=0.254
 dPairGap=0.254
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
+Name=IndicatorLED
+Clearance=0.1524
+TrackWidth=0.508
+ViaDiameter=0.762
+ViaDrill=0.381
+uViaDiameter=0.3048
+uViaDrill=0.127
+dPairWidth=0.254
+dPairGap=0.254
+dPairViaGap=0.25
+[pcbnew/Netclasses/3]
 Name=LowPower
 Clearance=0.254
 TrackWidth=0.762
@@ -268,7 +279,7 @@ uViaDrill=0.127
 dPairWidth=0.254
 dPairGap=0.254
 dPairViaGap=0.25
-[pcbnew/Netclasses/3]
+[pcbnew/Netclasses/4]
 Name=Power
 Clearance=0.254
 TrackWidth=1.27
