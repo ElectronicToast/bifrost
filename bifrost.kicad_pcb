@@ -290,7 +290,7 @@
   )
 
   (module bifrost-logo:bifrost (layer F.Cu) (tedit 0) (tstamp 5E111F4F)
-    (at 160.655 73.025)
+    (at 161.925 73.025)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
@@ -785,7 +785,7 @@
   )
 
   (module bifrost-logo:rrwb (layer B.Cu) (tedit 0) (tstamp 5E11192A)
-    (at 157.48 74.93 180)
+    (at 156.845 74.93 180)
     (fp_text reference G*** (at 0 0) (layer B.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
     )
