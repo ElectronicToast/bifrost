@@ -1,6 +1,6 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP Conn_03x07_VCC_GND
+$CMP Conn_03x07_23_Common
 D Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
 F ~
