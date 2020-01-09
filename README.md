@@ -10,7 +10,7 @@ Bifrost is an expansion board for the Arduino Nano v3.x for control of WS2811-ba
 
 Four pushbuttons and three status LEDs onboard permit physical user control. If different peripherals are desired, an auxiliary connection header is provided for adding off-board I/O.
 
-A socket for an HC-05 module is present, permitting serial communication and programming over Bluetooth. I2C connectors are provided for chaining multiple boards.
+A socket for an HC-05 module is present, permitting serial communication and programming over Bluetooth. I2C connectors are provided for chaining multiple boards. A microSD card socket is also provided for storage of configuration settings, animations, etc.
 
 This project is designed with KiCad EDA v.5.1.5. Documentation can be found under `/doc` and fabrication files under `/gerber`.
 
