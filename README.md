@@ -12,6 +12,8 @@ Four pushbuttons and three status LEDs onboard permit physical user control. If 
 
 A socket for an HC-05 module is present, permitting serial communication and programming over Bluetooth. I2C connectors are provided for chaining multiple boards.
 
+This project is designed with KiCad EDA v.5.1.5. Documentation can be found under `/doc` and fabrication files under `/gerber`.
+
 ## Photos
 
 ![front](img/bifrost_F.PNG)
