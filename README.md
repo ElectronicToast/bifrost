@@ -25,7 +25,7 @@ Connect DC power (7-12V recommended) to the VIN port. If LED output power is des
 
 To power the board from the VLED input, bridge jumper JP1. 5V must be provided to VLED if JP1 is closed.
 
-To use an HC-05 module for Bluetooth serial, bridge jumpers JP3 and JP4. Do not connect additional UART devices to the Arduino Nano hardware UART if the HC-05 is used. To enable Bluetooth programming, also bridge JP2.
+To use an HC-05 module for Bluetooth serial, bridge jumpers JP3 and JP4. Do not connect additional UART devices to the Arduino Nano hardware UART if the HC-05 is used. A 100 ohm resistor on JP3 is recommended to prevent TX bus contention. To enable Bluetooth programming, also bridge JP2.
 
 ## Author
 - Ray Sun - Undergraduate, Electrical Engineering, Caltech, Class of 2020
