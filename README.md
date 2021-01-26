@@ -4,6 +4,8 @@
 
 Arduino Nano RGB LED controller
 
+![iso](img/bifrost_iso.png)
+
 ## Description
 
 Bifrost is an expansion board for the Arduino Nano v3.x for control of WS2811-based addressable RGB LED strips. Four LED outputs are provided for driving multiple strips; however, the RAM limitations of the ATmega328p must be kept in mind. A stereo audio jack and a socket for an [Adafruit MAX4466 electret microphone](https://www.adafruit.com/product/1063) are present for music visualization applications.
@@ -16,9 +18,9 @@ This project is designed with KiCad EDA v.5.1.5. Documentation can be found unde
 
 ## Photos
 
-![front](img/bifrost_F.PNG)
+![front](img/bifrost_F.png)
 
-![back](img/bifrost_R.PNG)
+![back](img/bifrost_B.png)
 
 ## Usage
 Connect DC power (7-12V recommended) to the VIN port. If LED output power is desired, connect external LED power to the VLED port. Do not attempt to draw more than 1-2A of current from any one LED output.
