@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name bifrost)(type KiCad)(uri ${KIPRJMOD}/footprints/bifrost.pretty)(options "")(descr ""))
+  (lib (name bifrost-logo)(type KiCad)(uri ${KIPRJMOD}/footprints/bifrost-logo.pretty)(options "")(descr ""))
+)
